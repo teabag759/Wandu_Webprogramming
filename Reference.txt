@@ -1,0 +1,66 @@
+// 폰트어썸 링크 Font Awesome 6
+<script src="https://kit.fontawesome.com/fc656f6870.js" crossorigin="anonymous"></script>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+
+/* 폰트어썸 cdn 4.7 */
+ @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+ 가득찬 heart : Unicode: f004
+ 빈 heart : Unicode: f08a 
+
+// jQuery CDN
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+// 구글폰트 한글 Noto Sans Korean
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+font-family: 'Noto Sans KR', sans-serif;
+
+// 구글폰트 영어 roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+font-family: 'Roboto', sans-serif;
+
+//Xeicon
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<i class="xi-google"></i> #CD201F
+<i class="xi-facebook"></i> #1877F2
+<i class="xi-naver"></i> #00C300
+<i class="xi-kakaotalk"></i> #FFFC00
+
+
+■ Reference URL
+FontAwesome 4.7 CheatSheet
+https://fontawesome.bootstrapcheatsheets.com/
+
+FontAwesome 4.7 Official Website
+https://fontawesome.com/v4.7.0/icons/
+
+XEICON Ver2.3.3
+https://xpressengine.github.io/XEIcon/
+
+Web Gradients
+https://webgradients.com/
+
+W3 Schools Color Picker
+https://www.w3schools.com/colors/colors_picker.asp
+
+Flat UI colors
+https://flatuicolors.com/
+
+Social Colors
+https://www.materialui.co/socialcolors
+
+눈누 한글 폰트
+https://noonnu.cc/
+
+테마포레스트(웹디자인판매)
+https://themeforest.net/
+
+지디웹(우수웹 선정)
+https://www.gdweb.co.kr/main/
+
+텍스트 애니메이션(Tobias Ahlin)
+https://tobiasahlin.com/moving-letters/
+
+
