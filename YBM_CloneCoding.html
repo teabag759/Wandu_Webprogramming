@@ -14,14 +14,13 @@
             <div class="banner-outer">
                 <div class="banner">
                     <img src="Source_images/banner.png" alt="">
-                    <span class="close-banner">
-
-                    </span></div>
+                    <span class="close-banner"><i class=xi-close-thin></i></span>
+                </div>
             </div>
             <div class="lnb-outer">
                 <div class="lnb">
                     <div class="logo">
-                        <a href="#none"><img src="" alt=""></a>
+                        <a href="#none"><img src="Source_images/logo.png" alt=""></a>
                     </div>
                     <div class="lnb-navi">
                         <a href="#none">Login</a>
@@ -56,7 +55,7 @@
                                 <a href="#none">Writing practice</a>
                             </div>
                         </li>
-                        <li><a href="#none">Event 13</a>
+                        <li><a href="#none">Event<span class="badge">13</span></a>
                             <div class="dropdown">
                                 <a href="#none">Event in progress</a>
                                 <a href="#none">End event</a>
@@ -82,6 +81,55 @@
                         </li>
                     </ul>
                     <div class="sitemap-outer">
+                        <div class="sitemap">
+                            <div class="mapinfo">
+                              <b>Guided Lessons</b>
+                              <a href="#none">Progress Tracker</a>
+                              <a href="#none">Classroom Mode</a>
+                              <a href="#none">Skills Progression</a>
+                            </div>
+                            <div class="mapinfo">
+                              <b>Learning Library</b>
+                              <a href="#none">Worksheets</a>
+                              <a href="#none">Games</a>
+                              <a href="#none">Workbooks</a>
+                              <a href="#none">Activities</a>
+                              <a href="#none">Songs</a>
+                              <a href="#none">Stories</a>
+                              <a href="#none">Exercises</a>
+                            </div>
+                            <div class="mapinfo">
+                              <b>Teaching Tools</b>
+                              <a href="#none">Lesson Plans</a>
+                              <a href="#none">Worksheet Generator</a>
+                              <a href="#none">Common Core Resources</a>
+                              <a href="#none">More Teaching Tools</a>
+                            </div>
+                            <div class="mapinfo">
+                              <b>Schools</b>
+                              <a href="#none">Get a Quote</a>
+                              <a href="#none">Buy School License</a>
+                            </div>
+                            <div class="mapinfo">
+                              <b>Support</b>
+                              <a href="#none">Pricing</a>
+                              <a href="#none">Give Gift</a>
+                              <a href="#none">Redeem Gift</a>
+                              <a href="#none">Schools</a>
+                              <a href="#none">FAQs</a>
+                              <a href="#none">Tell us what you think</a>
+                              <a href="#none">Terms of Service</a>
+                            </div>
+                            <div class="mapinfo">
+                              <b>About Us</b>
+                              <a href="#none">Company</a>
+                              <a href="#none">Reviews</a>
+                              <a href="#none">Blog</a>
+                              <a href="#none">Press</a>
+                              <a href="#none">Site Map</a>
+                              <a href="#none">Contact Us</a>
+                            </div>
+                          </div>
                     </div>
                 </nav>
             </div>
@@ -90,5 +138,13 @@
             <img src="Source_images/section-bg.png" alt="">
         </section>
     </div>
+    <script>
+        $('.close-banner').click(function(){
+            $('.banner-outer').hide();
+            // $('.banner-outer').fadeOut();
+            // $('.banner-outer').slideUp();
+        })
+            
+    </script>
 </body>
 </html>
