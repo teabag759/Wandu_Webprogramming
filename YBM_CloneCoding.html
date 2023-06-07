@@ -144,7 +144,14 @@
             // $('.banner-outer').fadeOut();
             // $('.banner-outer').slideUp();
         })
-            
+        $('.trigger').click(function(){
+            // $('.trigger, .gnb li:last-child').toggleClass('active')
+            $(this).toggleClass('active')
+            $('.gnb li:last-child').toggleClass('active')
+            // $('.sitemap-outer').toggle()
+            // $('.sitemap-outer').slideToggle()
+            $('.sitemap-outer').fadeToggle()
+        })
     </script>
 </body>
 </html>

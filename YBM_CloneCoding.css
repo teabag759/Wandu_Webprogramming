@@ -3,13 +3,16 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 body{
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     line-height: 1.5em;
     color: #222;
+    font-size: 15px;
 }
 
 a{
@@ -42,6 +45,7 @@ a{
     right: 10px;
     top: 5px;
     font-size: 26px;
+    cursor: pointer;
 }
 
 
@@ -74,7 +78,7 @@ a{
 }
 
 .lnb .lnb-navi a:hover{
-    color: skyblue;
+    color: dodgerblue;
 }
 
 /* GNB */
@@ -86,6 +90,7 @@ a{
 
 nav{
     width: 1450px;
+    position: relative;
 }
 
 .gnb{
@@ -109,6 +114,8 @@ nav{
 .gnb li:last-child{
     width: 50px;
     background-color: #12359d;
+    position: relative;
+    transition: 0.35s;
 }
 
 .gnb li:last-child.active{
@@ -116,19 +123,20 @@ nav{
 }
 
 .gnb li:first-child{
-    background-color: orangered;
+    background-color: crimson;
 }
 
 .gnb li > a{
     color: #fff;
     display: block;
     height: 100%;
-    padding-top: 13px;
+    padding-top: 14px;
 }
 
 .badge{
-    background-color: orangered;
+    background-color: crimson;
     color: #fff;
+    font-style: normal;
     font-size: 12px;
     padding: 0 5px;
     border-radius: 10px;
@@ -170,4 +178,87 @@ nav{
 
 .gnb li:hover .dropdown{
     opacity: 1;
+    pointer-events: all;
+}
+
+/* Trigger */
+.trigger{
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.trigger span{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.35s;
+}
+
+.trigger span:nth-child(1){
+    top: 0;
+}
+
+.trigger span:nth-child(2){
+    top: 50%;
+}
+
+.trigger span:nth-child(3){
+    top: 100%;
+}
+
+.trigger.active span{
+    background-color: #000;
+}
+
+.trigger.active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.trigger.active span:nth-child(2){
+    opacity: 0;
+}
+
+.trigger.active span:nth-child(3){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/* Sitemap */
+.sitemap-outer{
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    width: calc(100% - 1px);
+    padding: 30px 15px;
+    display: none;
+}
+
+.sitemap{
+    display: flex;
+}
+
+.sitemap .mapinfo{
+    flex: 1;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.sitemap .mapinfo a{
+    display: block;
+}
+
+.sitemap .mapinfo a::before{
+    content: '- ';
+}
+
+.sitemap .mapinfo a:hover{
+    text-decoration: underline;
 }
