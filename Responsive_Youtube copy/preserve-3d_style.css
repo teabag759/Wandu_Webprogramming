@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    #background-color: black;
+}
+
+/* .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: translate(-50%, -50%);
+} */
+
+.flip-btn{
+    perspective: 1000px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    transform-style: preserve-3d;
+    /* transform: rotateX(-50deg); */
+    transition: .5s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.flip-btn:hover{
+    transform: rotateX(-90deg);
+}
+
+.front{
+    background-color: goldenrod;
+    height: 40px;
+    transform: translateZ(20px);
+    font-size: smaller;
+}
+.back{
+    background-color: darkgoldenrod;
+    height: 40px;
+    transform: rotateX(90deg) translateZ(60px);
+    font-size: smaller;
+}
