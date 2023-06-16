@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: #f8f98dde;
+            height: 100vh;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-auto-rows: 200px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            max-width: 1000px;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image3{
+            grid-row: 1/3;
+            grid-column: 3/4;
+        }
+        .image4{
+            grid-column: 1/3;
+        }
+        .image5{
+            grid-row: 3/5;
+        }
+        .image8{
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image1">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image2">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image3">
+        <img src="https://images.unsplash.com/photo-1567941723610-db0bcb4cca67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGVzc2VydHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image4">
+        <img src="https://images.unsplash.com/photo-1612198790700-0ff08cb726e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image5">
+        <img src="https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image6">
+        <img src="https://images.unsplash.com/photo-1504205758521-892897f3a28e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGRlc3NlcnR8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image7">
+        <img src="https://images.unsplash.com/photo-1543573852-1a71a6ce19bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzc2VydHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Dessert" class="image image8">
+    </div>
+</body>
+</html>
+
+<!-- ####### image #######
+딸기 핫케이크 
+https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60
+
+초코 아이스크림 (세로)
+https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60
+
+쿠키
+https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+
+레몬 컵케이크
+https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+
+막갈옹(세로)
+https://images.unsplash.com/photo-1612198790700-0ff08cb726e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+
+라즈베리 파르페(세로)
+https://plus.unsplash.com/premium_photo-1669680785558-c189b49aed4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+
+쉐이크(가로)
+https://images.unsplash.com/photo-1543573852-1a71a6ce19bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVzc2VydHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
+
+과일타르트(가로)
+https://images.unsplash.com/photo-1567941723610-db0bcb4cca67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGVzc2VydHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60 -->
+
+<!-- 브라우니
+https://images.unsplash.com/photo-1504205758521-892897f3a28e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGRlc3NlcnR8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60 -->
