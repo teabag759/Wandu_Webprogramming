@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the Other Tags</title>
+</head>
+<body>
+    <!-- video : 웹에 동영상을 띄울 수 있게 함 -->
+        <!-- options
+        1. src : 파일 주소 
+        2. controls : 컨트롤러 표시
+        3. autoplay : 자동 재생
+        4. loop : 반복 재생
+        5. width
+        6. height
+        7. muted : 음소거
+        8. poster : 동영상의 대표 이미지  -->
+
+    <!-- <video src="동영상 주소">
+        웹 브라우저가 video 태그를 지원하지 않을 때 표시 문구
+    </video> -->
+    <video src="https://www.youtube.com/watch?v=-ktReZlIUbQ&ab_channel=it%27sMichelle%EB%AF%B8%EC%85%B8" width="500" controls autoplay>
+        동영상을 지원하지 않습니다.
+    </video>
+    
+    <hr>
+    <!-- audio : 오디오 재생 -->
+    <!-- <audio controls>
+        <source src="오디오 주소" type="audio/확장자">
+        웹 브라우저가 audio 태그를 지원하지 않을 때 표시 문구
+    </audio> -->
+    <audio controls>
+        <source src="/examples/media/sample_audio_mp3.mp3" type="audio/mpeg">
+        이 문장은 여러분의 브라우저가 audio 태그를 지원하지 않을 때 화면에 표시됩니다!
+    </audio>
+
+</body>
+</html>
