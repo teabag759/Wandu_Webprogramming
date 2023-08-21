@@ -113,12 +113,40 @@
         <input type="text" placeholder="ID 입력">
 
 
-    <br>    
-    <br>
-    <br>
+    <!-- <hr> : horizontal rule, 가로줄을 넣는 태그 -->
+    <hr>
+    <hr>
 
-    <!-- label : a caption for an item in a user interface, input과 함께 사용됨 -->
-    
-    
+
+    <!-- label : a caption for an item in a user interface, 
+        input과 함께 사용하며 input의 id 속성과 label의 for 속성의 값을 일치시켜서 사용함 -->
+    <!-- <label for="input 태그의 id 속성 값">명칭</label>
+    <input type="radio" name="gd" value="w" id="이 페이지에서 사용할 고유한 이름"> -->
+    <h1>label 태그 활용</h1>
+    <p>찌개 선택</p>
+    <label for="Kimchi">김치</label>
+    <input type="radio" name="soup" value="K" id="Kimchi">
+    <label for="Doenjang">된장</label>
+    <input type="radio" name="soup" value="K" id="Doenjang">
+
+
+    <hr>
+    <hr>
+
+
+    <!-- select : 옵션 메뉴를 제공하는 drop-down list를 정의할 때 사용 -->
+    <h1>생월</h1>
+    <select name="birthMonth">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
 </body>
 </html>
