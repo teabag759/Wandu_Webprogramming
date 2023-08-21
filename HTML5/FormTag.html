@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormTag</title>
+</head>
+<body>
+    <!-- Form : 정보를 보내는 양식 
+        - form 태그 안 아이디, 비밀번호, 고객 문의 글 등의 정보를 서버 사이드 프로그램을 통해 데이터베이스에 저장 -->
+    <!-- <form name="폼 태그 이름" method="데이터 전송방식" action="정보를 보낼 주소"></form> -->
+
+    <!-- input : type의 속성값에 따라 다양한 기능 제공 -->
+    <!-- <input type="타입" name="입력 폼의 이름" maxlength="최대 입력 가능 글자 수"> -->
+
+    <h1>input 태그의 type="text"</h1>
+    ID <input type="text" name="userID" maxlength="12">
+
+    <br>
+    <h1>input 태그의 type="password"</h1>
+        <!-- password : 입력 값이 특수 문자로 가려짐 -->
+    PW <input type="password" name="userPW" maxlength="12">
+
+    <br>
+    <h1>input 태그의 type="checkbox"</h1>
+        <!-- checkbox : 다중 선택 O, value 속성 명시 -->
+    <h2>취미</h2>
+    음악 감상<input type="checkbox" name="myHobby" value="music">
+    영화 감상<input type="checkbox" name="myHobby" value="movie">
+    수집<input type="checkbox" name="myHobby" value="collection">
+
+    <br>
+    <h1>input 태그의 type="radio"</h1>
+        <!-- radio : 유일 선택, value 속성 명시 -->
+    <h2>취미</h2>
+    음악 감상<input type="radio" name="myHobby" value="music">
+    영화 감상<input type="radio" name="myHobby" value="movie">
+    수집<input type="radio" name="myHobby" value="collection">
+
+    <br>
+    <h1>input 태그의 type="button"</h1>
+        <!-- button : 버튼을 눌렀을 때 발생하는 기능을 만들 때, value 속성 명시 -->
+    <input type="button" value="약관을 보시려면 누르세요.">
+    
+    <br>
+    <h1>input 태그의 type="file"</h1>
+        <!-- file : 파일 업로드, 백엔드 필요 -->
+    <input type="file" name="attachedFile">
+
+    <br>
+    <h1>input 태그의 type="search"</h1>
+        <!-- search : 검색어 입력 -->
+    검색 <input type="search" name="search">
+
+    <br>
+    <h1>input 태그의 type="reset"</h1>
+        <!-- reset : 같은 폼 내에 있는 입력 정보 초기화, form 태그를 사용하지 않고도 사용 가능 -->
+    <p>입력 폼에 값을 입력하고 다시 [입력 버튼을 누르세요.]</p>
+    <form name="signUp" method="post" action="signup.php">
+        ID <input type="text" name="userID" value="">
+        <input type="reset" value="다시 입력">
+    </form>
+        
+    <br>
+    <h1>input 태그의 type="submit"</h1>
+    <!-- submit : 입력한 여러 값들을 action 속성에 입력된 페이지로 전송, 백엔드 필요 -->
+    <form name="signUp" method="post" action="signup.php">
+        <input type="text" name="userID" value="myID">
+        <input type="submit" value="완료">
+    </form>
+
+    <br>
+    <h1>input 태그의 type="email"</h1>
+    <!-- email : email 입력 폼 -->
+    <form name="signUp" method="post" action="signup.php">
+        email <input type="email">
+        <input type="submit" value="submit">
+    </form>
+
+    <br>
+    <h1>input 태그의 type="url"</h1>
+    <!-- url : url 입력 폼 -->
+    <form name="signUp" method="post" action="signup.php">
+        <input type="url">
+        <input type="submit" value="submit">
+    </form>
+
+    <br>
+    <h1>input 태그의 type="number"</h1>
+    <!-- number : 숫자 입력 폼 -->
+    <form name="signUp" method="post" action="signup.php">
+        <input type="number" pattern="\d*">
+            <!-- pattern="\d*" : 스마트폰에서 입력 폼을 이용할 경우 숫자 키패드가 나오게 함 -->
+        <input type="submit" value="submit">
+    </form>
+
+    <br>
+    <h1>input 태그의 type="color"</h1>
+    <!-- color : 색 지정 -->
+    <form name="signUp" method="post" action="signup.php">
+        <input type="color">
+    </form>
+
+    <br>
+    <h1>input 태그의 type="range"</h1>
+    <!-- range : 독특한 슬라이드 방식의 인터페이스를 보여줌  -->
+    <!-- <input type="range" min="최소값" max="최대값" value="기본값" step="이동단위"> -->
+        <input type="range" min="0" max="100" value="50" step="10">
+
+    <br>
+    <h1>input 태그의 placeholder 옵션</h1>
+    <!-- placeholder : 입력 창에 어떤 내용을 입력해야 하는지 알려줌, 입력 시 자동으로 사라짐 -->
+        <input type="text" placeholder="ID 입력">
+
+
+    <br>    
+    <br>
+    <br>
+
+    <!-- label : a caption for an item in a user interface, input과 함께 사용됨 -->
+    
+    
+</body>
+</html>

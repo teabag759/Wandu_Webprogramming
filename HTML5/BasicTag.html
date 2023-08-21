@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+    <!-- head : 외부 파일 기입 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- meta : 문서 키워드, 문서에 대한 설명, 언어 설정 등의 정보 기입 -->
+    <title>BasicTag</title>
+</head>
+<body>
+    <!-- 텍스트 태그 -->
+    <!-- p : paragraph, 텍스트 기입, 태그가 끝난 후 줄 바꿈 -->
+    <p>Hello World!</p>
+
+    <!-- b : bold -->
+    <b>Hello World!</b><br>
+
+    <!-- i : italic -->
+    <i>Hello World!</i><br>
+
+    <!-- u : underline -->
+    <u>Hello World!</u><br>
+
+    <!-- strike : 취소선 긋기 -->
+    <strike>Hello World!</strike><br>
+
+    <!-- br : 줄 바꿈, 닫는 태그 X -->
+    <p>Hello <br> World!</p>
+
+    <!-- h : heading, h1~h6(숫자가 작을 수록 텍스트의 크기가 큼) -->
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+
+    <!-- em : emphasize, 출력 - italic, 음성 - 강조하여 읽어줌 -->
+    <p><em>Once</em> Upon a Time</p>
+
+
+    <!-- 이미지 태그 -->
+    <!-- <img src="이미지 주소" width="가로 길이 숫자" height="세로 길이 숫자" alt="이미지 설명"> -->
+    <img src="../Source_images/Responsive_Youtube_img/AI.png" width="500px" height="500px" alt="AI"><br>
+    
+
+    <!-- 하이퍼링크 태그(a(anchor) 태그) -->
+    <!-- <a href="이동할 주소" target="이동할 방식"> 클릭할 내용 </a> -->
+        <!-- target : _blank - 새 창 열기, _self - 바로 이동(default) -->
+    <a href="www.naver.com" target="_blank"> 새 창 열어 이동하기 </a><br>
+    <a href="www.naver.com"> 바로 이동하기 </a><br>
+
+    <!-- 이미지 클릭하여 페이지 이동 -->
+    <!-- <a href="이동할 주소" target="이동할 방식">
+        <img src="이미지 주소" width="가로 길이 숫자" height="세로 길이 숫자" alt="이미지 설명">
+    </a> -->
+    
+    <!-- ping 속성 활용 -->
+    <!-- <a href="이동할 주소" ping="통계 기록을 수집 구현한 프로그램의 주소"> 클릭할 내용 </a> -->
+
+
+    <!-- 리스트 태그 -->
+    <!-- ul : Unorder list, 번호가 붙지 않음 -->
+    <p>번호가 붙는 리스트 ol</p>
+    <ol>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>jQuery</li>
+        <li>MySQL</li>
+        <li>PHP</li>
+    </ol>
+
+    <!-- ol : Order list, 번호가 붙음  -->
+    <p>번호가 붙지 않는 리스트 ul</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>jQuery</li>
+        <li>MySQL</li>
+        <li>PHP</li>
+    </ul>
+</body>
+</html>
