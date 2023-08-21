@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Partition Tag</title>
+</head>
+<body>
+    <!-- inline : 자기 자신의 내용만큼만 크기를 설정 -> span
+    block : 가로의 길이를 화면 끝까지 크기를 설정 -> div -->
+    
+    <!-- div - block -->
+    <div style="background: yellow;">in div Tag1</div>
+    <div style="background: red;">in div Tag2</div>
+    <br>
+    <!-- span - inline -->
+    <span style="background: yellow;">in span Tag1</span>
+    <span style="background: red;">in span Tag2</span>
+
+    <br>
+    <!-- header : 웹페이지의 상단 -->
+    <header>
+        <div id="logo">My Web Service</div>
+        <!-- nav : 다른 페이지 또는 현재 페이지의 다른 부분과 연결되는 네비게이션 링크(navigation links)들의 집합을 정의(메뉴, 목차, 인덱스 등) -->
+        <nav>
+            <ul>
+                <li>my menu 1</li>
+                <li>my menu 2</li>
+                <li>my menu 3</li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <!-- footer : 웹페이지의 하단 -->
+    <footer>
+        <ul>
+            <li>my dream 1</li>
+            <li>my dream 2</li>
+            <li>my dream 3</li>
+        </ul>
+        <p>copyright my web service</p>
+    </footer>
+
+    <br>
+    <!-- section :  HTML 문서에 포함된 독립적인 섹션(section)을 정의할 때 사용, 보통 제목 요소(h1~h6)를 자식 요소로 포함하는 경우가 많음 -->
+    <h1>웹언어의 종류</h1>
+    <section>
+        <h2>HTML</h2>
+        <p>태그로 이루어진 웹페이지의 토대가 되는 언어</p>
+    </section>
+    <section>
+        <h2>CSS</h2>
+        <p>웹페이지의 태그에 붙여진 선택자를 이용하여 스타일을 적용하는 언어</p>
+    </section>
+
+    <br>
+    <!-- article : 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용(신문기사, 블로그, 보도 기사 등) -->
+    <article>
+        <h1>트럼프 대통령 당선 후 한국과 미국의 관계는?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consectetur veritatis repellendus consequatur officiis odit ex cumque laborum repellat quidem, aperiam qui quaerat, repudiandae hic at sapiente asperiores earum optio?</p>
+    </article>
+</body>
+</html>
