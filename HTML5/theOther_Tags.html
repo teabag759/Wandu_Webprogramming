@@ -24,6 +24,7 @@
         동영상을 지원하지 않습니다.
     </video>
     
+    <br>
     <hr>
     <!-- audio : 오디오 재생 -->
     <!-- <audio controls>
@@ -35,5 +36,63 @@
         이 문장은 여러분의 브라우저가 audio 태그를 지원하지 않을 때 화면에 표시됩니다!
     </audio>
 
+    <!-- svg와 canvas : 화면에 무언가 그릴 때 -->
+
+    <br>
+    <hr>
+    <!-- table : 표를 활용해 데이터를 구현하거나 통계자료를 출력할 때 -->
+        <!-- tr : 줄 생성 / td : 칸 생성 -->
+    <table width="100%" bgcolor="skyblue" cellpadding="1">
+        <tr align="center" bgcolor="white">
+            <td></td>
+            <td>월</td>
+            <td>화</td>
+            <td>수</td>
+            <td>목</td>
+            <td>금</td>
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td>1교시</td>
+            <td>체육</td>
+            <td>물리</td>
+            <td>과학</td>
+            <td>독일어</td>
+            <td>수학</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <!-- table 태그의 셀 병합 기능 -->
+        <!-- colspan : 가로 셀 병합, rowspan : 세로 셀 병합 -->
+    <h1>colspan 활용</h1>
+    <table width="350" bgcolor="yellow" cellpadding="1">
+        <tr align="center" bgcolor="red">
+            <td colspan="3">
+                3칸 병합
+            </td>
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <h1>rowspan 활용</h1>
+    <table width="350" bgcolor="yellow" cellpadding="1">
+        <tr align="center" bgcolor="red" height="30">
+            <td rowspan="3" width="50%">
+                3줄 병합
+            </td>
+            <td>1</td>
+        </tr>
+        <tr align="center" bgcolor="blue"height="30">
+            <td>2</td>
+        </tr>
+        <tr align="center" bgcolor="pink"height="30">
+            <td>2</td>
+        </tr>
+    </table>
 </body>
 </html>

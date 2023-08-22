@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <style>
+        /* 글자 사이 간격 조정
+        선택자{letter-spacing: px or em} */
+        .ltsm3{letter-spacing: -3px;}
+        .ltsm2{letter-spacing: -2px;}
+        .ltsm1{letter-spacing: -1px;}
+        .lts10{letter-spacing: 10px}
+        .lts20{letter-spacing: 20px}
+        .lts30{letter-spacing: 30px}
+
+        /* 줄간격 조정
+        선택자{letter-spacing:값} */
+        .lh100per{line-height: 100%;}
+        .lh150per{line-height: 150%;}
+        .lh200per{line-height: 200%;}
+        .lh20px{line-height: 20px;}
+        .lh40px{line-height: 40px;}
+        .lh80px{line-height: 80px;}
+
+        /* 텍스트에 줄 긋기 */
+        .underline{text-decoration: underline;}
+        .overline{text-decoration: overline;}
+        .underAndOver{text-decoration: underline overline;}
+        .lineThrough{text-decoration: line-through;}
+        .none{text-decoration: none;}
+
+        /* 두 가지 이상 속성 지정 */
+        .variety{font-size: 50px; text-shadow: 3px 3px 3px blue; color: aqua;}
+        .variety02{font-size: 50px; text-shadow: 3px 3px 3px blue, 5px 5px 5px yellow; color: aqua;}
+    </style>
+</head>
+<body>
+    <p class="ltsm3">-3px</p>
+    <p class="ltsm2">-2px</p>
+    <p class="ltsm1">-1px</p>
+    <p class="lts10">10px</p>
+    <p class="lts20">20px</p>
+    <p class="lts30">30px</p>
+
+
+    <br>
+    <p>줄간격을 적용하지 않았음<br>
+    줄간격을 적용하지 않았음</p>
+
+    <p class="lh100per">줄간격 100% 적용<br>
+    줄간격 100% 적용</p>
+
+    <p class="lh150per">줄간격 150% 적용<br>
+    줄간격 150% 적용</p>
+
+    <p class="lh200per">줄간격 200% 적용<br>
+    줄간격 200% 적용</p>
+
+    <p class="lh20px">줄간격 20px 적용<br>
+    줄간격 20px 적용</p>
+
+    <p class="lh40px">줄간격 40px 적용<br>
+    줄간격 40px 적용</p>
+
+    <p class="lh80px">줄간격 80px 적용<br>
+    줄간격 80px 적용</p>
+
+    <br>
+    <p class="underline">underline</p>
+    <p class="overline">overline</p>
+    <p class="underAndOver">underAndOver</p>
+    <p class="lineThrough">lineThrough</p>
+    <p class="none">none</p>
+
+    <p class="variety">햇빛은 쨍쨍 모래알은 반짝</p>
+    <p class="variety02">햇빛은 쨍쨍 모래알은 반짝</p>
+</body>
+</html>

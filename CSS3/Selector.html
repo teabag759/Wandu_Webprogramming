@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* 태그명을 선택자로 사용 
+        태그명{css 속성:값}*/
+        h1{color:cadetblue}
+
+        /* 클래스명으로 선택자 사용 
+        .클래스명{css 속성:값}*/
+        .wandu{color: coral;}
+
+        /* 같은 클래스 이름 중 특정 위치 태그를 선택
+        .클래스명:nth-child(숫자-오름차순){css 속성:값} */
+        .pandas:nth-child(3n){color: cornflowerblue;}
+
+        /* .클래스명:nth-last-child(숫자-내림차순){css 속성:값}  */
+        .pandas:nth-last-child(2){color:rgb(120, 253, 253)}
+
+        /* 아이디를 선택자로 사용
+        #아이디{css 속성:값} */
+        #wanduKong{color: tomato;}
+
+        /* 자식 요소 선택하기 */
+        header ul {color: darkcyan;}
+        section h1 {color: yellowgreen;}
+        .container section p {color: thistle;}
+        .container p {color: steelblue;}
+    </style>
+</head>
+<body>
+    <h1>안녕하세요 푸바오 입니다!</h1>
+    <h2 class="wandu">안녕하세요 완두콩 입니다!</h2>
+    <h3 class="wandu">랫서판다 너무 귀여워요</h3>
+
+    <br>
+    <ol>
+        <li class="pandas">판다</li>
+        <li class="pandas">판다</li>
+        <li class="pandas">판다</li>
+        <li class="pandas">판다</li>
+        <li class="pandas">판다</li>
+        <li class="pandas">판다</li>
+    </ol>
+
+    <br>
+    <h2 id="wanduKong">완두소로 만든 완두콩 빵 맛있음</h2>
+
+    <br>
+    <div class="container">
+        <header>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+            </ul>
+        </header>
+        <p>여기는 div의 p 태그</p>
+        <section>
+            <h1>해달은 귀여워</h1>
+            <p>수달도 귀여움</p>
+            <p>여기는 section의 p 태그</p>
+        </section>
+        <footer>
+            <div class="logo">My Web Service</div>
+        </footer>
+    </div>
+</body>
+</html>
