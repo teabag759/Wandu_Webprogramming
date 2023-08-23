@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGround</title>
+    <style>
+        /* .background{width: 100%; height: 500px; background-image: url(./astronomy_BackGround.jpg);} */
+            /* -> 이미지 일부만 나타나는 문제 */
+        
+        /* .background{width: 100%; height: 500px; background-image: url(./astronomy_BackGround.jpg); background-size: contain;} */
+            /* contain : 배경 이미지가 잘리는 부분 없이 모두 표시(이미지의 반복)
+            cover : 배경 이미지가 잘리더라도 꽉 차게 표시 */
+
+        /* .background{width: 500px; height: 500px; background-image: url(./astronomy_BackGround.jpg); 
+            background-size: 400px 300px; background-repeat: repeat-x;} */
+            /* no-repeat : 반복하지 않음; repeat-x : 가로 반복; repeat-y : 세로 반복; */
+
+        
+        /* background-position */
+        /* .background{background-image: url(./cat_background-position.jpg); width: 100%; height: 600px;
+        background-repeat: no-repeat; background-position: center;} */
+        /* .background{background-image: url(./cat_background-position.jpg); width: 100%; height: 600px;
+        background-repeat: no-repeat; background-position: right center;} */
+        /* .background{background-image: url(./cat_background-position.jpg); width: 100%; height: 600px;
+        background-repeat: no-repeat; background-position: 30% 70%;} */
+
+
+        /* gradient */
+        /* .gradient{width: 100%; height: 900px; background: linear-gradient(pink, rgb(92, 0, 128));} */
+        /* .gradient{width: 100%; height: 900px; background: radial-gradient(pink, rgb(92, 0, 128));} */
+        /* .gradient{width: 100%; height: 900px; background: linear-gradient(30deg, pink, rgb(92, 0, 128));} */
+
+        /* opacity */
+        /* .opacity{width: 100%; height: 500px; background-color: #6fcec4; opacity: 0.5;} */
+            /* -> 텍스트까지 opacity가 적용 */
+        /* .opacity{width: 100%; height: 500px; background:rgba(227, 182, 191, 0.5)} */
+            /* 텍스트에는 opacity가 적용되지 않음 */
+
+        /* box-shadow: 가로 세로 번짐효과 그림자색 */
+        .shadowEffect{width: 300px; height: 300px; background-color: blue; box-shadow: 10px 50px 50px skyblue;
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+    </style>
+</head>
+<body>
+    <!-- <div class="background"></div> -->
+    
+    <!-- <div class="gradient"></div> -->
+
+    <!-- <div class="opacity">opacity 적용한 텍스트</div> -->
+
+    <div class="shadowEffect"></div>
+</body>
+</html>
