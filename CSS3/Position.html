@@ -11,6 +11,7 @@
         .hidden{overflow: hidden;}
         .scroll{overflow: scroll;} */
 
+
         /* position_static */
         /* .static{position: static; width: 100px; height: 100px;}
 
@@ -18,6 +19,32 @@
         .static:nth-child(2){background-color: pink; left: 100px;}
         .static:nth-child(3){background-color: yellow;} */
 
+
+        /* position_absolute */
+        /* .absolute{position: absolute; width: 100px; height: 100px;}
+        .absolute:nth-child(1){background-color: blueviolet;left: 100px;}
+        .absolute:nth-child(2){background-color: rgb(158, 88, 224); top: 120px; left: 200px;}
+        .absolute:nth-child(3){background-color: rgb(191, 160, 220); top: 240px; left: 300px;} */
+
+        /* relative - absolute */
+        /* .parent{position: relative; width: 500px; height: 500px; top: 500px; background-color: rgb(109, 213, 213);}
+        .child:nth-child(1){position: absolute; height: 500px; width: 230px; top: 0; left: 10px; background-color: #ff9292;}
+        .child:nth-child(2){position: absolute; height: 250px; width: 230px; top: 0; left: 250px; background-color: #9f92ff;}
+        .child:nth-child(3){position: absolute; height: 250px; width: 230px; top: 250px; left: 250px; background-color: #635c9b;} */
+
+        /* .parent{position: static; width: 500px; height: 500px; top: 500px; background-color: rgb(109, 213, 213);}
+        .child:nth-child(1){position: absolute; height: 500px; width: 230px; top: 0; left: 10px; background-color: #ff9292;}
+        .child:nth-child(2){position: absolute; height: 250px; width: 230px; top: 0; left: 250px; background-color: #9f92ff;}
+        .child:nth-child(3){position: absolute; height: 250px; width: 230px; top: 250px; left: 250px; background-color: #635c9b;} */
+            /* -> .child가 body를 기준으로 top이 적용됨 */
+
+        /* .relativeNot{width:300px; height: 200px; background-color: rgb(0, 105, 108); }
+        .relative{width:300px; height: 200px; background-color: cadetblue; position: relative; top: 500px; left: 50px;} */
+
+
+        /* fixed */
+        .fixed{width: 300px; height: 200px; background-color: #884b4b; position: fixed; top: 0; left: 0;}
+        .relative01{width: 300px; height: 200px; background-color: #7c884b; position: relative; top: 1500px; left: 200px;}
     </style>
 </head>
 <body>
@@ -46,6 +73,26 @@
     <div class="static">position 속성 값을 static으로 설정</div> -->
 
 
+    <!-- absolute : An element with position: absolute; is positioned relative to the nearest positioned ancestor 
+        (instead of positioned relative to the viewport, like fixed) -->
+    <!-- <div class="absolute">position의 값을 absolute로 적용 1</div>
+    <div class="absolute">position의 값을 absolute로 적용 2</div>
+    <div class="absolute">position의 값을 absolute로 적용 3</div>
     
+    <div class="parent">
+        <div class="child">자식 박스 1</div>
+        <div class="child">자식 박스 2</div>
+        <div class="child">자식 박스 3</div> -->
+    </div>
+
+    <!-- relative : 자신의 위치를 기준으로 이동  -->
+    <!-- <div class="relativeNot">position의 값을 relative로 적용하지 않음</div>
+    <div class="relative">position의 값을 relative로 적용함</div> -->
+
+    <!-- fixed : An element with position: fixed; is positioned relative to the viewport, 
+        which means it always stays in the same place even if the page is scrolled: -->
+    <div class="fixed">position의 값을 fixed로 적용</div>
+    <div class="relative01">position의 값을 relative 적용</div>
+
 </body>
 </html>
