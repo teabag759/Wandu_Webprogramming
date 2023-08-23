@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* 선택자{animation: 키프레임 이름, 시간, 반복 횟수;}
+        @keyframes identifier {
+            from{start css property value}
+            to{end css property value}
+        } */
+
+        .move{width: 150px; height: 150px; 
+        border-radius: 20px;
+        background-color: #3f70ea;
+        position: relative;
+        animation: move 3s 5;}
+
+        /* @keyframes move {
+            from{left: 0;}
+            to{left: 500px;}
+        } */
+
+        @keyframes move {
+            from{left: 0;}
+
+            10%{width: 100px; height: 100px; left: 200px;}
+            30%{width: 150px; height: 150px; left: 500px;}
+            50%{width: 200px; height: 200px; left: 700px;}
+            70%{width: 300px; height: 300px; left: 600px;}
+            90%{width: 50px; height: 50px; left: 200px;}
+
+            to{left: 0px;}
+        }
+
+        .move p{float: left; width: 100%; text-align: center;
+        margin: 60px 0 0 0; font-size: 20px; color: aliceblue; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class="move"><p>animation</p></div>
+</body>
+</html>

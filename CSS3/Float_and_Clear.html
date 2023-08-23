@@ -5,14 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float and Clear</title>
     <style>
-        div{width: 300px; height: 300px;}
+        /* div{width: 300px; height: 300px;} 
         .box1{float: left; background: yellow;}
-        .box2{float: right; background: green;}
+        .box2{float: right; background: green;} */
+
+        /* 박스가 옆으로 위치, 창의 크기를 줄이면 다음 라인에 위치 */
+        /* div{float: left; width: 300px; height: 300px;} 
+        .box:nth-child(1){background-color: #8f0909;}
+        .box:nth-child(2){background-color: #c20404;}
+        .box:nth-child(3){background-color: #fd0101;} */
+
+        /* 첫번째, 세번째 박스에만 float 적용 -> 두번째 박스는 보이지 않음(첫번째 박스와 겹쳐져서 존재) */
+        /* div{width: 300px; height: 300px;} 
+        .box:nth-child(1){float: left; background-color: #8f0909; position: relative; left: 100px;}
+        .box:nth-child(2){background-color: #c20404;}
+        .box:nth-child(3){float: left; background-color: #fd0101;} */
+
+        /* clear: left;를 사용하면 float: left; 밑에 위치하게 됨 */
+        div{width: 300px; height: 300px;} 
+        .box:nth-child(1){float: left; background-color: #8f0909;}
+        .box:nth-child(2){clear: left; float: left; background-color: #c20404;}
+        .box:nth-child(3){float: left; background-color: #fd0101;}
     </style>
 </head>
 <body>
     <!-- float: specifies how an element should float -->
-    <div class="box1">float: left</div>
-    <div class="box2">float: right</div>
+    <!-- <div class="box1">float: left</div>
+    <div class="box2">float: right</div> -->
+
+
+    <!-- clear : The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it. 
+    The clear property applies to floating and non-floating elements.(floating, non-floating element O) -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
 </body>
 </html>
