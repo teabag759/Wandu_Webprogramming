@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* 개발자 도구로 확인해보면 div는 한 라인을 모두 차지 하고 있음 */
+        div{width: 200px; height: 100px;}
+
+        /* .block{font-size: 20px; color:white; display: block;}
+        .block:nth-child(1){background-color: #a50202;}
+        .block:nth-child(2){background-color: #02a582;}
+        .block:nth-child(3){background-color: #1a02a5;}
+
+        
+        .inline{font-size: 50px; color:rgb(255, 255, 255); display: inline; position: relative; top: 100px;}
+        .inline:nth-last-child(4){background-color: #5c0303;}
+        .inline:nth-last-child(3){background-color: #02a582;}
+        .inline:nth-last-child(2){background-color: #1a02a5;} */
+
+        /* width나 height을 주지 않는 경우 자기 자신만의 크기를 설정하면서도 block 처럼 한 라인을 차지하지 않음 */
+        .inlineBlock{font-size: 40px; color:rgb(255, 255, 255); display: inline-block; }
+        .inlineBlock:nth-child(1){background-color: #aa0000;}
+        .inlineBlock:nth-child(2){background-color: #15a502;}
+        .inlineBlock:nth-child(3){background-color: #0205a5;}
+    </style>
+</head>
+<body>
+    <!-- block : always takes up the full width available (stretches out to the left and right as far as it can)
+    ex. <p>, <div> -->
+    <!-- <div class="block">first box</div>
+    <div class="block">second box</div>
+    <div class="block">third box</div> -->
+    
+
+    <!-- inline : does not start on a new line. only takes up as much width as necessary.
+    ex. <span> -->
+    <!-- <div class="inline">first box</div>
+    <div class="inline">second box</div>
+    <div class="inline">third box</div> -->
+
+    <!-- inline-block 
+    Compared to display: inline, the major difference is that display: inline-block 
+    allows to set a width and height on the element.
+
+    Also, with display: inline-block, the top and bottom margins/paddings are respected, 
+    but with display: inline they are not.
+
+    Compared to display: block, the major difference is that display: inline-block 
+    does not add a line-break after the element, so the element can sit next to other elements. -->
+
+    <div class="inlineBlock">first box</div>
+    <div class="inlineBlock">second box</div>
+    <div class="inlineBlock">third box</div>
+
+    <!-- none : 해당 요소가 화면에 나타나지 않음 -->
+</body>
+</html>

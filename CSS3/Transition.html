@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        /* transition : allows you to change property values smoothly, over a given duration
+        linear : 일정한 속도, ease : 느리게 -> 빠르게 -> 느리게, ease-in: 시작 시 느리게, ease-out : 종료 시 느리게 */
+
+        .box{width: 100px; height: 100px; margin: 100px; background-color: #8530f4;}
+
+         /* -> 요소의 어떤 속성이 변경되더라도 변화가 나타남 */
+        .rotateX{transform: rotateX(0deg); transition: all 10s linear;}
+        .rotateX:hover{transform: rotateX(360deg);}
+        
+        /* -> transform 속성의 변화만 나타남 */
+        .rotateY{transform: rotateY(0deg); transition: transform 10s linear;}
+        .rotateY:hover{transform: rotateY(360deg);}
+
+        .BOX{width: 150px; height: 150px; background-color: #3eea38; position: relative; margin: 100px;
+        transition: width 2s ease background-color 4s linear;}
+        .BOX:hover{width: 300px; height: 300px; background-color: #29e4f9;}
+    </style>
+</head>
+<body>
+    <div class="box rotateX">rotate X</div>
+    <div class="box rotateY">rotate Y</div>
+
+    <div class="BOX">Bingle Bangle</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+the difference in id and class
+
+1. 고유성(unique):
+id: id는 문서 내에서 고유해야 합니다. 즉, 한 문서 내에 동일한 id 값을 가진 요소는 하나만 존재해야 합니다. id 선택자를 사용하면 해당 id 값을 가진 단 하나의 요소만 선택됩니다.
+class: class는 문서 내에서 중복해서 사용할 수 있습니다. 즉, 여러 요소가 동일한 class 값을 가질 수 있으며, class 선택자를 사용하면 해당 class 값을 가진 모든 요소가 선택됩니다.
+
+2. 적용 범위(scope):
+id: id 선택자를 사용하면 해당 id 값을 가진 하나의 요소만 선택됩니다. 이로 인해 id는 주로 단 하나의 요소에 특정 스타일을 적용할 때 사용됩니다.
+class: class 선택자를 사용하면 해당 class 값을 가진 여러 요소가 선택됩니다. 이로 인해 class는 여러 요소에 동일한 스타일을 적용하거나 그룹을 만들 때 사용됩니다.
+
+3. 선택 우선순위(priority):
+id: id 선택자의 우선순위가 더 높습니다. 즉, 동일한 스타일 속성이 id 선택자와 class 선택자 모두에 정의되어 있을 경우, id 선택자의 스타일이 적용됩니다.
+class: class 선택자는 보다 일반적인 선택자로 간주되며, id보다 우선순위가 낮습니다.
+
+-------------------------------------------------------------------------------------------
+<div id="unique">This is a unique element with ID.</div>
+<div class="common">This is a common element with class.</div>
+<div class="common">This is another common element with class.</div>
+
+#unique {
+    color: red; /* This style will apply to the element with id="unique". */
+}
+
+.common {
+    color: blue; /* This style will apply to elements with class="common". */
+}
+-------------------------------------------------------------------------------------------
+
+요약하면, id는 고유한 식별자로 사용되며, class는 여러 요소를 그룹화하거나 스타일을 공유할 때 사용됩니다. 
+id 선택자의 우선순위가 더 높고 고유성을 갖는 반면, class 선택자는 여러 요소에 적용될 수 있고 더 일반적인 선택자입니다.

@@ -25,7 +25,10 @@
         .scale:nth-child(4){transform: scale(2, 0.5);} */
 
         /* skew(가로, 세로) : 기울기 변경 */
-
+        .skew{width: 100px; height: 100px; background-color: #057fd1; margin: 100px;}
+        .skew:nth-child(1){transform: skew(50deg, 0);}
+        .skew:nth-child(2){transform: skew(0, 50deg);}
+        .skew:nth-child(3){transform: skew(20deg, 50deg);}
 
     </style>
 </head>
@@ -44,6 +47,6 @@
 
     <div class="skew">X 가로 기울기 변경</div>
     <div class="skew">Y 세로 기울기 변경</div>
-    <div class="skew">XY 가로 기울기 변경</div>
+    <div class="skew">XY 가로 세로 기울기 변경</div>
 </body>
 </html>
