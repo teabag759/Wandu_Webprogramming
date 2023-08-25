@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- viewport : 모바일 기기의 실제 해상도 적용 -->  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
+    <style>
+        /* 적용되는 font-size에 따라 텍스트의 크기가 달라짐 */
+        html{font-size: 20px;}
+        /* html{font-size: 40px;} */
+        .parent{font-size: 3rem;}
+        .child:nth-child(1){font-size: 2em;}
+        .child:nth-child(2){font-size: 2rem;}
+
+        .rem:nth-child(1){font-size: 1rem;}
+        .rem:nth-child(2){font-size: 2rem;}
+        .rem:nth-child(3){font-size: 3rem;}
+        .rem:nth-child(4){font-size: 5rem;}
+        .rem:nth-child(5){font-size: 8rem;}
+
+        li{width: 100px;}
+            /* 웹브라우저의 가로 길이가 0px부터 500px까지 적용 -> li 태그가 세로로 나열 */
+        @media screen and (min-width: 100px) and (max-width: 500px) {
+            li{clear: both; float: left;}
+        }
+            /* 웹브라우저의 가로 길이가 501px부터 적용 -> li가 가로로 나열 */
+        @media screen and (min-width: 501px){
+            li{float: left;}
+        }
+
+        .box{float: left; width: 100%; height: 100px; background-color: #6978ed; text-align: center;}
+    </style>
 </head>
 <body>
-    
+    <!-- em : 값을 부모 태그의 font-size 속성값을 기준으로 설정
+    rem: 최상위 태그의 font-size 속성값을 기준으로 설정 
+    ex. html 태그의 font-size 속성값을 10px 설정 -> 1.5 rem : 15px -->
+
+    <p>I am nothing [20px]</p>
+    <div class="parent">
+        I am parent [3rem]
+        <p class="child">I am child [2em]</p>
+        <p class="child">I am child [2rem]</p>
+    </div>
+
+    <div class="rem">1rem 적용</div>
+    <div class="rem">2rem 적용</div>
+    <div class="rem">3rem 적용</div>
+    <div class="rem">5rem 적용</div>
+    <div class="rem">8rem 적용</div>
+
+    <!-- 미디어쿼리 : 뷰포트의 크기에 따라 서로 다른 레이아웃을 생성할 수 있음 -->
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>jQuery</li>
+        <li>MySQL</li>
+        <li>PHP</li>
+    </ul>
+
+    <div class="box">가로 길이 100% 적용</div>
+
 </body>
 </html>
