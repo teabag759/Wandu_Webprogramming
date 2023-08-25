@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and Grid</title>
+    <style>
+        .item{background-color: #13919c; border: 2px solid salmon;}
+        .container{
+            background-color: #075e65; border: 2px solid rgb(170, 86, 77);
+            
+            display: flex;
+            /* display: inline-flex; */
+
+            /* row : 가로 / row-reverse : 역순으로 가로 배치 / column : 열 / column-reverse : 역순으로 세로 배치 */
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex : sets how a flex item will grow or shrink to fit the space available in its flex container -->
+    <!-- 1. flex items은 가로 방향으로 배치, 자신의 내용물의 width 만큼 차지(inline), height는 컨테이너의 높이만큼 늘어남 -->
+    <div class="container">
+        <div class="item">helloflex</div>
+        <!-- <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus consequuntur recusandae vitae id ullam qui nobis obcaecati doloribus sunt. Accusantium ea praesentium distinctio. Odit voluptas saepe tenetur dolores facere!</div> -->
+        <div class="item">abc</div>
+        <div class="item">helloflex</div>
+    </div>
+</body>
+</html>
