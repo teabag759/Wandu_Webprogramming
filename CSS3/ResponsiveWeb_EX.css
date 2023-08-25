@@ -1,0 +1,62 @@
+html{font-size: 10px; min-width: 320px;}
+
+header{width: 100%; background: #67b0ff; padding: 10px 0 10px 0;
+    display: inline-block;}
+header nav{float: left;}
+header nav ul{float: left; width: 100%;}
+header nav ul li{float: left; color: aliceblue;
+    text-align: center; margin: 15px 15px 0 0;}
+header nav ul li:hover{background-color: #574ff7;;}
+
+#content{width: 100%;}
+#myVisual{width: 100%; 
+    background: url(./R_EX_background.jpg);
+    background-size: cover; background-position: 0 50%;}
+    /* background-position: sets the initial position for each background image */
+#myVisual section{width: 80%; margin: 0 auto; 
+    position: relative; top: 40%;}
+#myVisual section p {float: left; width: 100%; 
+    text-align: center; color: rgb(138, 45, 45); font-size: bold;}
+
+#webIntro{clear: both; float: left; width: 100%;
+    background: #f2f5d7;}
+.webIntroCenter{width: 90%; margin: 0 auto;}
+
+.blah_blah{float: left; width: 23%; height: 50px; 
+    border: 1px solid #1e4e0d; border-radius: 10px;
+    position: relative;}
+.blah_blah p{float: left; width: 100%; text-align: center;
+    color: #1e4e0d; position: absolute;
+    top: 50%; transform: translate(0, -50%);}
+
+    /* 중앙정렬 
+        1. 부모요소 position: relative;
+        2. 자식요소 position: absolute; -> top: 50%; transform: translate(0, -50%) */
+
+footer{clear: both; float: left; width: 100%; 
+    border-bottom: 1px solid rgb(100, 209, 246);
+    padding: 20px 0 20px 0}
+footer h1{width: 100%; text-align: center; font-size: 2em;}
+
+/* mobile web */
+@media screen and (min-width: 0px) and (max-width: 600px){
+    #logo{float: left; width: 100%; font-size: 3em;
+    color: aliceblue; text-align: center;}
+    header nav{width: 100%;}
+    header nav ul li{float: left; width: 16%; font-size: 1em;}
+    #myVisual{height: 300px;}
+    #myVisual section p{font-size: 2em;}
+    .blah_blah{clear: both; float: left; width: 100%; text-align: center;}
+    .blah_blah:nth-child(2){margin: 10px 0px;}
+}
+
+/* pc web */
+@media screen and (min-width:601px) {
+    #logo{font-size: 3em; color: aliceblue; margin-left: 5%;
+    display: inline-block;}
+    header nav{float: right; margin-top: 10px;}
+    header header nav ul li{width: 100px; font-size: 1.3em;}
+    #myVisual{height: 400px;}
+    #myVisual section p{font-size: 4em;}
+    .blah_blah:nth-child(2){margin: 0 14% 0;}
+}
